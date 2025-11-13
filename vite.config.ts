@@ -7,7 +7,9 @@ export default defineConfig(async () => {
 
   if (process.env.NODE_ENV !== 'production') {
     const vueDevTools = await import('vite-plugin-vue-devtools')
-    plugins.push(vueDevTools.default())
+    if (vueDevTools?.default) {
+      plugins.push(vueDevTools.default())
+    }
   }
 
   return {
