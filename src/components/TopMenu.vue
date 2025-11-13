@@ -8,7 +8,7 @@ import { ref } from 'vue';
 
 const items = ref([
   {
-    label: 'BookCopies',
+    label: 'BookCopiesssss',
     command: () => router.push('/bookcopies'),
   },
   {
